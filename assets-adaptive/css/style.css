@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-size: 5vw;
+    font-size: 1rem;
 }
 
 .container {
@@ -19,8 +19,8 @@ body {
 .header {
     grid-area: hd;
     background-color: #D3D1CB;
-    
-
+ 
+  
 
 
 
@@ -29,9 +29,7 @@ body {
 .sidebar {
     grid-area: sb;
     background-color: cadetblue;
-  
-    
-
+   
 }
 
 .main {
@@ -47,32 +45,28 @@ body {
 }
 .content1{grid-area: c1;
 background-color: white;
-margin: 1%;}
+margin: 10px;}
 .content2{grid-area: c2;
     background-color: white;
-    margin: 1%;}
+    margin: 10px;}
 .content3{grid-area:c3;
     background-color: white;
-    margin: 1%;}
+    margin: 10px;}
 .main-content{grid-area: mc1;}
 
 .footer {
     grid-area: ft;
     background: #D3D1CB;
-   
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-display: grid;
 
-    gap: 1%;
+    gap: 10px;
 
 }
 
 .footer-section {
-  
-  
-
    
     background: cornsilk;
+    margin: 10px;
    
-    
 }
