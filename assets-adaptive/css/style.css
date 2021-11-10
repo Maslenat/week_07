@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .container {
@@ -54,19 +54,40 @@ margin: 10px;}
     margin: 10px;}
 .main-content{grid-area: mc1;}
 
-.footer {
-    grid-area: ft;
-    background: #D3D1CB;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
 
-    gap: 10px;
 
-}
 
-.footer-section {
+  
+
+    @media screen and (min-width: 1024px) {
+        .footer {
+            grid-area: ft;
+            background: #D3D1CB;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+        
+        }
+        
+        .footer-section {
+           
+            background: cornsilk;
+            margin: 10px;
+           
+        
+    
+    
+        }
+
+        
+    }
+
+   @media screen and (max-width: 1024px){
+       .footer, .footer-section{
+           display: none;
+       }
+
+   }
    
-    background: cornsilk;
-    margin: 10px;
-   
-}
+    
+
