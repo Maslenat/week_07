@@ -1,93 +1,131 @@
 body {
     text-align: center;
-    font-size: 1em;
+    font-size: 5vw;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
-    width: 100vw;
-    height: 100vh;
-    grid-template-areas: "hd hd hd hd"
-        "mc mc mc sb"
-        "ft ft ft ft";
-
-
-}
-
-.header {
-    grid-area: hd;
-    background-color: #D3D1CB;
  
-  
-
-
-
-}
-
-.sidebar {
-    grid-area: sb;
-    background-color: cadetblue;
-   
-}
-
-.main {
-    grid-area: mc;
-    background: bisque;
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "mc1 mc1"
-    "c1 c2"
-    "c3 c3" ;
-
-}
-.content1{grid-area: c1;
-background-color: white;
-margin: 10px;}
-.content2{grid-area: c2;
-    background-color: white;
-    margin: 10px;}
-.content3{grid-area:c3;
-    background-color: white;
-    margin: 10px;}
-.main-content{grid-area: mc1;}
-
-
-
-
-  
 
     @media screen and (min-width: 1024px) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 2fr 1fr;
+            width: 100vw;
+            height: 100vh;
+            grid-template-areas: "hd hd hd hd"
+                "mc mc mc sb"
+                "ft ft ft ft";
+        }
+        .header {
+            grid-area: hd;
+            background-color: #D3D1CB;
+          
+        }
+        
+        .sidebar {
+            grid-area: sb;
+            background-color: cadetblue;
+           }
+        
+        .main {
+            grid-area: mc;
+            background: bisque;
+            display: grid;
+            grid-template-rows: 2 fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:"mc1 mc1"
+            "c1 c2"
+            "c3 c3" ;
+          }
+          .content1{grid-area: c1;
+            background-color: white;
+            margin: 10px;}
+            .content2{grid-area: c2;
+                background-color: white;
+                margin: 10px;}
+            .content3{grid-area:c3;
+                background-color: white;
+                margin: 10px;}
+            .main-content{grid-area: mc1;}
         .footer {
             grid-area: ft;
             background: #D3D1CB;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
                 gap: 10px;
-        
         }
         
         .footer-section {
            
             background: cornsilk;
             margin: 10px;
-           
-        
-    
-    
         }
+    }
 
         
-    }
+    
 
    @media screen and (max-width: 1024px){
        .footer, .footer-section{
            display: none;
        }
+       .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr ;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: "hd hd hd hd"
+            "mc mc mc sb"
+            ;
+    
+    
+    }
+    .header {
+        grid-area: hd;
+        background-color: #D3D1CB;
+      
+    }
+    
+    .sidebar {
+        grid-area: sb;
+        background-color: cadetblue;
+       }
+    
+    .main {
+        grid-area: mc;
+        background: bisque;
+        display: grid;
+        grid-template-rows: 2 fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"mc1 mc1"
+        "c1 c2"
+        "c3 c3" ;
+      }
+      .content1{grid-area: c1;
+        background-color: white;
+        margin: 10px;}
+        .content2{grid-area: c2;
+            background-color: white;
+            margin: 10px;}
+        .content3{grid-area:c3;
+            background-color: white;
+            margin: 10px;}
+        .main-content{grid-area: mc1;}
+    
 
    }
    
-    
+   @media screen and (max-width: 768px){
+    .container {
+        display: block;
+        
+        
 
+
+   }
+   .header, .main, .sidebar{
+    height:33vh;
+   }
+
+ }
