@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+  
+  }
+  
+  *, *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-areas: "hd" 
+    "mn";
+    grid-template-columns:100%;
+    grid-template-rows: 23% 77%;
+
+}
+.header{
+    grid-area: hd;
+}
+.main{
+    grid-area: mn;
+    width: 1320px;
+    height: 624px;
+    m
+    background-color: #FFFAF3;
+    margin: 40px 60px 120px 60px;
+    position: relative;
+}
+.link-nav-1, .link-nav-2{
+    display: inline;
+}
+.navigation{
+    display: flex;
+   
+}
+.logo-nav{
+    margin: 60px 212px 60px 60px;
+}
+.list-nav-1{
+    margin: 60px 100px 60px 0px;
+    width: 305px;
+    justify-content: space-between;
+    display: flex;
+   
+
+}
+.link-nav-1 a{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+color: #C08D5D;
+}
+.link-nav-2 a{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+color: black;
+}
+
+.logotip{
+    margin: 44px 100px 44px 0px;
+   
+
+}
+.list-nav-2{
+    margin: 60px 100px 60px 0px;
+    width: 266px;
+    justify-content: space-between;
+    display: flex;
+}
+.grape-position{
+    width: 620px;
+    height: 720px;
+    display: block;
+    position: absolute;
+right: 0px ;
+bottom: 0px;
+}
+.text-small{
+    font-family: Playfair Display;
+font-style:normal ;
+font-weight:bold ;
+font-size: 50px;
+line-height: 67px;
+/* identical to box height */
+
+letter-spacing: 0.06em;
+color: #3F4042;
+}
+.text-large{
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 93px;
+letter-spacing: 0.06em;
+
+color: #3F4042;
+}
+.h1-size{
+    width: 350px;
+    height: 160px;
+    margin: 96px 850px 55px 120px;
+}
+.text-content{
+    width: 535px;
+    height: 108px;
+    font-family: 'Lato';
+     font-style: normal;
+     font-weight: 400;
+    font-size: 18px;
+line-height: 147.6%;
+/* or 27px */
+
+letter-spacing: 0.06em;
+
+color: #3F4042;
+margin: 0px 665px 72px 120px;
+}
+.img-logo-main{
+    width: 45px;
+    height: 70px;
+
+}
+.logotip-main{
+    display: block;
+    position: absolute;
+  
+    top: 81px;
+    left: 258px;
+}
+.read-more{
+    margin: 0px 1003px 81px 120px; 
+    border: 1px solid #C08D5D;
+    width: 198px;
+    height: 64px;
+padding: 0;
+position: relative;}
+
+    .text-button{
+        width: 109px;
+        height: 30px;
+    font-family: 'lato';
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 147.6%;
+/* identical to box height, or 30px */
+
+letter-spacing: 0.06em;
+
+color: #3F4042;
+margin: 17px 74px 17px 15px;
+
+}
+.block-button{
+    width: 60px;
+    height: 61.33px;
+    background-color:#C08D5D;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+ 
+}
+.strelka{
+    display: block;
+   margin: 26px auto;
+}
